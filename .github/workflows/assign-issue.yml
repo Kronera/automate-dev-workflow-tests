@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign Issue
-        uses: peter-evans/assign-issue@v3
+        uses: peter-evans/assign-issue@v3.2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: "Kronera"  
+          assignees: "Kronera"
