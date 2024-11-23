@@ -1,4 +1,4 @@
-name: Assign Issue on Open
+name: Assign New Issues on Open
 
 on:
   issues:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign Issue
-        uses: automate-dev-workflow-tests/action-assign@v2
+        uses: peter-evans/assign-issue@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: "Kronera"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: "Kronera"  
