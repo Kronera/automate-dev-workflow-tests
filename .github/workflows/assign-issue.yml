@@ -1,4 +1,4 @@
-name: Assign New Issues
+name: Testing
 
 on:
   issues:
